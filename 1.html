@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web JavaScript Đơn Giản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chào mừng bạn đến với trang web JavaScript!</h1>
+    <button onclick="showMessage()">Nhấn vào tôi</button>
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "Bạn đã nhấn vào nút!";
+        }
+    </script>
+</body>
+</html>
